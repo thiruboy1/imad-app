@@ -62,6 +62,7 @@ function createtemplete(data){
     var heading = data.heading;
     var date = data.date;
     var content = data.content;
+    var navcontent = data.navcontent;
 var htmltemplete = 
 `
 <html>
