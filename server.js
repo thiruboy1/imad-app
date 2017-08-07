@@ -5,12 +5,64 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleone = {
+    title: 'My First Article',
+    heading: 'Article One',
+    date: 'sep 2017',
+    content: `
+    <p>This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, </p>
+    <p>This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article,This is content of my article, This is content of my article, This is content of my article, </p>
+    <p>This is content of my article, This is content of my article, This is content of my article,This is content of my article, This is content of my article,This is content of my article,This is content of my article, This is content of my article, </p>
+     `
+    
+};
+function createtemplete(data){
+    var title = data.title;
+    var heading = data.heading;
+    var date = data.date;
+    var content = data.content
+var htmltemplete = 
+`
+<html>
+    <head> 
+      <link href="/ui/style.css" rel="stylesheet" />
+            <title>${title}</title>
+    </head>
+<body>
+    <div class="continer">
+    <div>
+        <a href="/">Home</a>
+       
+        <a href="article-one">${title}</a>
+    </div>
+    <hr/>
+    <h3>
+        ${heding};
+    </h3>
+    <div> Sep</div>
+    <ul>
+    ${content};
+    </ul>
+     <div class="center">
+            <img src="/ui/madi.png" class="img-medium"/>
+        </div>
+        </div>
+    
+</body>
+</html>
+`;
+return htmltemplete
+    
+
+}
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one', function(req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    res.send(createtemplete(articleone));
 });
 
 app.get('/article-two', function(req, res){
