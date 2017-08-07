@@ -16,11 +16,33 @@ var articleone = {
      `
     
 };
+var articletwo = {
+    title: 'My 2nd Article',
+    heading: 'Article two',
+    date: 'oct 2017',
+    content: `
+    <p>This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, </p>
+    <p>This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article,This is content of my article, This is content of my article, This is content of my article, </p>
+    <p>This is content of my article, This is content of my article, This is content of my article,This is content of my article, This is content of my article,This is content of my article,This is content of my article, This is content of my article, </p>
+     `
+    
+};
+var articlethree = {
+    title: 'My 3rd Article',
+    heading: 'Article three',
+    date: 'nov 2017',
+    content: `
+    <p>This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, </p>
+    <p>This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article,This is content of my article, This is content of my article, This is content of my article, </p>
+    <p>This is content of my article, This is content of my article, This is content of my article,This is content of my article, This is content of my article,This is content of my article,This is content of my article, This is content of my article, </p>
+     `
+    
+};
 function createtemplete(data){
     var title = data.title;
     var heading = data.heading;
     var date = data.date;
-    var content = data.content
+    var content = data.content;
 var htmltemplete = 
 `
 <html>
@@ -66,10 +88,10 @@ app.get('/article-one', function(req, res){
 });
 
 app.get('/article-two', function(req, res){
-    res.send('This is second article');
+    res.send(createtemplete(articletwo));
 });
 app.get('/article-three', function(req, res){
-    res.send('This is third article');
+    res.send(createtemplete(articlethree));
 });
 
 
