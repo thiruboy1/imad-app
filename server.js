@@ -6,8 +6,8 @@ var app = express();
 app.use(morgan('combined'));
 
 
-
-var articleone = {
+var articles = {
+ 'article-one': {
     title: 'My First Article',
     heading: 'Article One',
     date: 'sep 2017',
@@ -22,8 +22,8 @@ var articleone = {
     <p>This is content of my article, This is content of my article, This is content of my article,This is content of my article, This is content of my article,This is content of my article,This is content of my article, This is content of my article, </p>
      `
     
-};
-var articletwo = {
+},
+ 'article-two' : {
     title: 'My 2nd Article',
     heading: 'Article two',
     date: 'oct 2017',
@@ -39,8 +39,8 @@ var articletwo = {
     <p>This is content of my article, This is content of my article, This is content of my article,This is content of my article, This is content of my article,This is content of my article,This is content of my article, This is content of my article, </p>
      `
     
-};
-var articlethree = {
+},
+'article-three' : {
     title: 'My 3rd Article',
     heading: 'Article three',
     date: 'nov 2017',
@@ -56,7 +56,10 @@ var articlethree = {
     <p>This is content of my article, This is content of my article, This is content of my article,This is content of my article, This is content of my article,This is content of my article,This is content of my article, This is content of my article, </p>
      `
     
+},
+
 };
+
 function createtemplete(data){
     var title = data.title;
     var heading = data.heading;
@@ -103,16 +106,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function(req, res){
-    res.send(createtemplete(articleone));
+app.get('/articleName', function(req, res){
+    res.send(createtemplete(articlesName));
 });
 
-app.get('/article-two', function(req, res){
-    res.send(createtemplete(articletwo));
-});
-app.get('/article-three', function(req, res){
-    res.send(createtemplete(articlethree));
-});
 
 
 app.get('/ui/style.css', function (req, res) {
