@@ -76,7 +76,7 @@ var htmltemplete =
 <body>
     <div class="continer">
     <div>
-        ${navcontent};
+      
        
        
     </div>
