@@ -106,8 +106,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/articlesName', function(req, res){
-    res.send(createtemplete(articlesName));
+app.get('/articleName', function(req, res){
+    res.send(createtemplete(articles[articleName]));
 });
 
 
