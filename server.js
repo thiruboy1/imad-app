@@ -27,10 +27,12 @@ var articletwo = {
     title: 'My 2nd Article',
     heading: 'Article two',
     date: 'oct 2017',
-     navcontent :`<a href="/">Home</a>
+     navcontent:
+     `<a href="/">Home</a>
         <a href="article-one">Article ONE</a>
         <a href="article-two">Article Two</a>
-        <a href="article-three">Article Three</a>`,
+        <a href="article-three">Article Three</a>
+        `,
     content: `
     <p>This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, </p>
     <p>This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article,This is content of my article, This is content of my article, This is content of my article, </p>
@@ -42,10 +44,12 @@ var articlethree = {
     title: 'My 3rd Article',
     heading: 'Article three',
     date: 'nov 2017',
-     navcontent :`<a href="/">Home</a>
+     navcontent:`
+     <a href="/">Home</a>
         <a href="article-one">Article ONE</a>
         <a href="article-two">Article Two</a>
-        <a href="article-three">Article Three</a>`,
+        <a href="article-three">Article Three</a>
+        `,
     content: `
     <p>This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article, </p>
     <p>This is content of my article, This is content of my article, This is content of my article, This is content of my article, This is content of my article,This is content of my article, This is content of my article, This is content of my article, </p>
@@ -68,9 +72,9 @@ var htmltemplete =
 <body>
     <div class="continer">
     <div>
-        ${navcontent}
+        ${navcontent};
        
-        <a href="article-one">${title}</a>
+       
     </div>
     <hr/>
     <h3>
