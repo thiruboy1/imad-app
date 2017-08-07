@@ -37,9 +37,9 @@ var htmltemplete =
     </div>
     <hr/>
     <h3>
-        ${heding};
+        ${heading};
     </h3>
-    <div> Sep</div>
+    <div> ${date}</div>
     <ul>
     ${content};
     </ul>
