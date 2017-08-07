@@ -19,4 +19,15 @@ body {
 .img-medium {
     height: 200px;
 }
-
+.continer {
+    max-width: 20px;
+    margin: 0 auto;
+    font-family: verdana;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align: center;
+    font-size:100%;
+    
+    
+}
