@@ -7,16 +7,15 @@ var img = document.getElementById('madi');
 marginLeft = 0;
 var moveRight = function(){
         marginLeft = marginLeft + 10;
-    img.style.marginLeft = marginLeft+'px';
+        if(marginLeft<100){
+    img.style.marginLeft = marginLeft+'px';};
   
     
 };
 img.onclick = function(){
- console.log(moveRight);  
-    if(moveRight<500)
-    {
+ 
     var interval = setInterval(moveRight, 50); 
-    }
+    
   img.style.marginLeft = '1px';
   
 };
