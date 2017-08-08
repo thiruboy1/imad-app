@@ -32,6 +32,6 @@ img.onclick = function(){
     var interval = setInterval(moveRight, 10); 
     var interval1 = setInterval(moveLeft, 10); 
     
-  img.style.marginLeft = '1px';
+  
   
 };
