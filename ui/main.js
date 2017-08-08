@@ -13,7 +13,11 @@ var moveRight = function(){
     img.style.marginLeft = marginLeft+'px';
             
         }
-        else{img.style.marginLeft = 0;}
+        ifelse (marginLeft >= 500 )
+        {
+            img.style.marginLeft = 0;
+            
+        }
         
   
     
