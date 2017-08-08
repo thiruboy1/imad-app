@@ -26,14 +26,14 @@ img.onclick = function(){
     var interval = setInterval(moveRight, 10); 
 };
 
-count = 0;
+counter = 0;
 var button = document.getElementById('counter');
 
 button.onclick = function(){
 
-count = count+1;
-var span = document.getElementById('counID');
-span.innerHTML = count.toString();
+counter = count+1;
+var span = document.getElementById('count');
+span.innerHTML = counter.toString();
 
 };
 
