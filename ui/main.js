@@ -1,7 +1,8 @@
 console.log('Loaded!');
 var element = document.getElementById('main-text');
-
+element.onclick = function(){
 element.innerHTML = 'NEW VALUE';
+};
 
 var img = document.getElementById('madi');
 marginLeft = 0;
@@ -13,7 +14,7 @@ var moveRight = function(){
     img.style.marginLeft = marginLeft+'px';
             
         }
-        ifelse (marginLeft >= 500 )
+        else if (marginLeft >= 500 )
         {
             img.style.marginLeft = 0;
             
