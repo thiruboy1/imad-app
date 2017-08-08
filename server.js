@@ -105,6 +105,12 @@ return htmltemplete;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+var count = 0;
+app.get('/counter',function(){
+    
+    count = count + 1;
+    res.send(count.toString());
+});
 
 app.get('/:articleName', function(req, res){
     var articleName = req.params.articleName;
