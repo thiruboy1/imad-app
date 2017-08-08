@@ -12,7 +12,7 @@ var moveRight = function(){
     
 };
 img.onclick = function(){
-    if(moveRight<10
+    if(moveRight<50)
     {
     var interval = setInterval(moveRight, 50); 
     }
