@@ -29,7 +29,7 @@ img.onclick = function(){
     var interval = setInterval(moveRight, 10); 
 
 };
-counter = 0;
+counter = 10;
 var button = document.getElementById('counter');
 button.onclick = function(){
     counter = counter+1;
