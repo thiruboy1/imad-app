@@ -1,3 +1,10 @@
 console.log('Loaded!');
 var element = document.getElementById('main-text');
-alert(element.innerTEXT);
+
+element.innerHTML = 'NEW VALUE';
+
+var img = document.getElementById('img');
+img.onclick = function(){
+  img.style.marginleft = '100px';
+  img.style.marginright='100px'
+};
