@@ -19,23 +19,20 @@ var moveRight = function(){
             img.style.marginLeft = 0;
             
         }
-        
-  
-    
 };
 
 img.onclick = function(){
  
     var interval = setInterval(moveRight, 10); 
-
 };
-counter = 10;
+
+counter = 0;
 var button = document.getElementById('counter');
+
 button.onclick = function(){
-    counter = counter+1;
-    
-    
-var span = document.getElementById('countID');
+
+counter = counter+1;
+var span = document.getElementById('counID');
 span.innerHTML = counter.toString();
 
 };
