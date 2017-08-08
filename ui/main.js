@@ -13,24 +13,15 @@ var moveRight = function(){
     img.style.marginLeft = marginLeft+'px';
             
         }
-  
-    
-};
-var moveLeft = function(){
-        marginRight = marginRight + 10;
-        if(marginRight<500)
-        {
-    img.style.marginRight = margiRight+'px';
-            
-        }
         marginLeft = 0;
   
     
 };
+
 img.onclick = function(){
  
     var interval = setInterval(moveRight, 10); 
-    var interval1 = setInterval(moveLeft, 10); 
+ 
     
   
   
