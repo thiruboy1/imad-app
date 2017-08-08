@@ -2,6 +2,7 @@
 
 var button = document.getElementById('counter');
 
+button.onclick = function(){
 var request = XMLHttpRequest();
 request.onreadystatechange = function()
 {
@@ -18,10 +19,11 @@ request.onreadystatechange = function()
     }
 };
 
-button.onclick = function(){
+
+
     
  request.open('GET', 'http://thiruboy1.imad.hasura-app.io/counter',true);
- request.send();
+ request.send(null);
 
 
 
