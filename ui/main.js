@@ -30,3 +30,9 @@ img.onclick = function(){
 
 };
 
+var button = document.getElementById('counter');
+button.onclick = count=count+1;
+countID = count.toString();
+
+
+
