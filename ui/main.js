@@ -23,6 +23,7 @@ var moveLeft = function(){
     img.style.marginRight = margiRight+'px';
             
         }
+        marginLeft = 0;
   
     
 };
