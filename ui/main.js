@@ -26,12 +26,18 @@ img.onclick = function(){
     var interval = setInterval(moveRight, 10); 
 };
 
-counter = 0;
-var button = document.getElementById('counter');
 
+
+
+
+
+
+var button = document.getElementById('counter');
+counter = 0;
 button.onclick = function(){
 
-counter = count+1;
+counter = counter+1;
+
 var span = document.getElementById('count');
 span.innerHTML = counter.toString();
 
