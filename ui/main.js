@@ -35,7 +35,7 @@ request.onreadystatechange = function()
 var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
     
-    var names = ['name1', 'name4', 'name3', 'name4'];
+    var names = documene.getElementById('name');
     var list = '';
     for(i=0;i<names.length;i++){
         list += '<li>'+ names[i] +'</li>';
