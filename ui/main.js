@@ -35,7 +35,7 @@ request.onreadystatechange = function()
 var submitbtn = documnet.getElementById('submit-btn');
 submitbtn.onclick = function(){
     
-    var names = [name1,name2,name3,name4];
+    var names = [name11,name2,name3,name5];
     
   
     var ul = document.getElementById('namelist');
