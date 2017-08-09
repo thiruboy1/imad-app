@@ -34,10 +34,13 @@ request.onreadystatechange = function()
 
 var submitbtn = documnet.getElementById('submit-btn');
 submitbtn.onclick = function(){
-    var name = document.getElementById('name');
-    var namelist = document.getElementById('namelist');
     
-    namelist = name;
+    var names = [name1,name2,name3,name4];
+    
+  
+    var ul = document.getElementById('namelist');
+    
+    ul.innerHTML = names;
     
 };
 
