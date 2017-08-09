@@ -32,8 +32,8 @@ request.onreadystatechange = function()
 
 };
 
-var submitbtn = documnet.getElementById('submit-btn');
-submitbtn.onclick = function(){
+var submit = documnet.getElementById('submit_btn');
+submit.onclick = function(){
     
     var names = [name11,name2,name3,name5];
     var list = '';
