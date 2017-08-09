@@ -32,7 +32,7 @@ request.onreadystatechange = function()
 
 };
 
-var submit = documnet.getElementById('submit_btn');
+var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
     
     var names = [name11,name2,name3,name5];
